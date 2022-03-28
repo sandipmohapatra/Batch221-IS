@@ -66,3 +66,21 @@ delete a row
 ----------------------
 delete from mphasis221 where empno=105;
 ----------------------------------------------------------------------------------------
+project-1
+----------------
+create table student221(rollno number,name varchar2(30),address varchar2(30));
+insert into student221 values(103,'atul','Hydrabad');
+select * from student221;
+add three 6 columns phy,chem,maths,total,avg,grade.
+
+alter table student221 add phy number 
+alter table student221 add chem number 
+alter table student221 add math number 
+alter table student221 add total number 
+alter table student221 add grade number 
+alter table student221 add grade varchar2(30) 
+
+--------------------------------------------------------------------------------
+
+
+
