@@ -43,5 +43,12 @@ select empno,name,salary / 30 as perdaysalary from mphasis221;
 update the table
 -----------------------------
 update mphasis221 set address='hydrabad' where name='Ashwin';
-
 ---------------------------------------------------------------------------------------------
+add a column to the table 
+------------------------------------------
+alter table mphasis221 add phoneno number
+----------------------------------------------------------------------------------------------------------
+to insert the data into the column
+-----------------------------------------------------------
+update mphasis221 set phoneno=9988776655 where empno=101;
+-------------------------------------------------------------------------------------------------------
