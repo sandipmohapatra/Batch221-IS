@@ -88,3 +88,6 @@ update student221 set phy=66,chem=75,math=77 where rollno=102;
 update student221 set phy=54,chem=72,math=77 where rollno=103; 
 ----------------------------------------------------------------------------------------------
 
+calculate total and average
+-------------------------------------
+update student221 set total=phy+chem+math , avg=total / 3 where rollno in(101,102,103);
