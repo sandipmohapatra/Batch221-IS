@@ -105,3 +105,30 @@ update student221 set grade='A' where avg>=70;
 update student221 set grade='B' where avg between 60 and 69.99;
 
 --------------------------------------------------------------------------------------------------------
+truncate table student221; //this will delete all the rows but the table structure will be present .
+---------------------------------------------------------------------------------------------------------------------------------
+desc student221
+
+drop table student221;//table structure will be deleted.
+-------------------------------------------------------------------------------------------------------------
+create a employee table enter 5 rows.
+empno,name,salary,dept,
+if(salary>30k)display---manager
+if(salary>25k)display---worker
+else
+helper
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
