@@ -1,0 +1,31 @@
+Oracle Database:-
+We have 2 parts in this:-1)SQL 2)PL-SQL
+SQL :-structure querry language.
+PL-SQL :- Programming Language -structure querry language
+In this we can store data in the form of structure having rows and columns.
+--------------------------------------------------------------------------------------------------
+we have datatypes:-
+1)empno is a data:-number is the datatype.
+2)name is a data :- varchar(30)--max limit of 2000 characters,varchar2(30)---max limit is 4000 characters,char(20)---max limit is 2000 characters. 
+3)DOB is a data :- date is the datatype.
+4)documents resume:-long datatype the size is 2gb.
+5)image,vedio :- long raw (binary data(0,1))
+6)Blob :- Binary data
+7)clob :- Character data
+8)money Rs 35000.50 is a data :- data type will be number(17,4)----(99999.99)
+--------------------------------------------------------------------------------------------------------------------
+create a table
+----------------------
+create table mphasis221(empno number,name varchar2(30),salary number(9,2),DOB date,address varchar2(100));
+
+to insert data
+-----------------------
+insert into mphasis221 values(101,'Deepak',50000.75,'01-jan-2010','Bangalore');
+
+to see the data
+----------------------
+select * from mphasis221;
+
+to check the database name
+-----------------------------------
+select * from global_name;
