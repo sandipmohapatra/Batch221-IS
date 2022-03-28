@@ -27,7 +27,7 @@ to see the data
 ----------------------
 select * from mphasis221;
 select name,salary,dob from mphasis221;
-
+---------------------------------------------------------------------------------
 
 to check the database name
 -----------------------------------
@@ -39,3 +39,9 @@ select empno,name,salary+1000 as salaryBonus from mphasis221;
 select empno,name,salary-1000 as AfterDonation from mphasis221;
 select empno,name,salary*12 as Annualsalary from mphasis221;
 select empno,name,salary / 30 as perdaysalary from mphasis221;
+---------------------------------------------------------------------------------------
+update the table
+-----------------------------
+update mphasis221 set address='hydrabad' where name='Ashwin';
+
+---------------------------------------------------------------------------------------------
