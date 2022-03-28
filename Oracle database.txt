@@ -71,7 +71,7 @@ project-1
 create table student221(rollno number,name varchar2(30),address varchar2(30));
 insert into student221 values(103,'atul','Hydrabad');
 select * from student221;
-add three 6 columns phy,chem,maths,total,avg,grade.
+add  6 columns phy,chem,maths,total,avg,grade.
 
 alter table student221 add phy number 
 alter table student221 add chem number 
@@ -98,3 +98,10 @@ insert limited data only
 -------------------------------------
 insert into student221(rollno,name,address) values(104,'biranchi','orissa');
 --------------------------------------------------------------------------------------------------
+Grade calculation
+--------------------------
+update student221 set grade='A' where avg>=70; 
+
+update student221 set grade='B' where avg between 60 and 69.99;
+
+--------------------------------------------------------------------------------------------------------
