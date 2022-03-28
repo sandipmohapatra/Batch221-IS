@@ -91,3 +91,10 @@ update student221 set phy=54,chem=72,math=77 where rollno=103;
 calculate total and average
 -------------------------------------
 update student221 set total=phy+chem+math , avg=total / 3 where rollno in(101,102,103);
+
+update student221 set avg=round(avg,2) where rollno in(101,102,103);
+---------------------------------------------------------------------------------------------------------
+insert limited data only
+-------------------------------------
+insert into student221(rollno,name,address) values(104,'biranchi','orissa');
+--------------------------------------------------------------------------------------------------
