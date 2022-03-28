@@ -21,11 +21,21 @@ create table mphasis221(empno number,name varchar2(30),salary number(9,2),DOB da
 to insert data
 -----------------------
 insert into mphasis221 values(101,'Deepak',50000.75,'01-jan-2010','Bangalore');
+insert into mphasis221(address,DOB,salary,name,empno) values('Pune','07-jun-2011',45000,'sunil',105)
 
 to see the data
 ----------------------
 select * from mphasis221;
+select name,salary,dob from mphasis221;
+
 
 to check the database name
 -----------------------------------
 select * from global_name;
+---------------------------------------------------------
+Arithmatic operation(+,-,*,/)
+----------------------------------
+select empno,name,salary+1000 as salaryBonus from mphasis221;
+select empno,name,salary-1000 as AfterDonation from mphasis221;
+select empno,name,salary*12 as Annualsalary from mphasis221;
+select empno,name,salary / 30 as perdaysalary from mphasis221;
