@@ -263,6 +263,16 @@ It stored in date format in the database.we can add or substract number from dat
 2)select last_day(sysdate) from dual;
 dual is a dummy table in oracle.which is used for small calculation.
 3)select months_between('29-mar-2022','29-nov-2021') from dual;
+4)select last_day('02-feb-2022') from dual;
+5)select to_char(sysdate,'Day') from dual;
+6)select to_char(sysdate,'Month') from dual;
+7)select to_char(sysdate,'year') from dual;
+8)select to_char(sysdate,'yyyy') from dual;
+9)select to_char(sysdate,'dd mon yy') from dual;
+10)select to_char(sysdate,'dd month yyyy') from dual;
+11)select to_char(sysdate+1) from dual;
+12)select to_char(sysdate-1) from dual;
+
 
 
 
