@@ -279,9 +279,14 @@ date datatype will except :-29-mar-2022
 -------------------------------------------------------------------------------------------------------------------
 group by function
 ------------------------------------
+create table dept221(empno number,name varchar2(30),salary number,deptno number);
 
+insert into dept221 values(107,'deepak',23000,20);
 
+select * from dept221;
 
+select count(empno) ,deptno from dept221 group by deptno;
+select sum(salary) ,deptno from dept221 group by deptno;
 
 
 
