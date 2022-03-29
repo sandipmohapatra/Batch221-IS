@@ -210,9 +210,24 @@ select * from emp221;
 bank table accno,name,balace,email 
 ------------------------------------------------------
 create table bank221(accno number primary key,name varchar2(30) not null,balance number check(balance > 1000),email varchar2(50) unique);
+
+insert into bank221 values(101,'sandip',1200,'sandip@gmail.com');
+insert into bank221 values(104,'kunal',3500,'kunal@gmail.com');
+
+select * from bank221;
+
 -------------------------------------------------------------------------------------------------------------------------------
-
-
+Foreign key:-
+create table transaction(accno number references bank221,trans number,total number)
+-------------------------------------------------------------------------------------------------------------------
+In this bank221 accno is linked with transaction table accno.
+Bank221 is the master table/parent table.
+transaction is the child table.
+we can enter transaction table accno duplicate values but it should be present in the bank221 accno.
+we cannot delete bank221 accno if  the accno is used in the transaction table accno.
+** we cannot make the accno orpfan.
+we have to delete the child table record first and then we can delete the parent record.
+---------------------------------------------------------------------------------------------------------------------------
 
 
 
