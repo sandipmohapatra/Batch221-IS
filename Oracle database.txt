@@ -158,6 +158,19 @@ except this others will be displayed
 select * from mphasis221 where salary not in(14000.75,15000.75); 
 except this others will be displayed
 -------------------------------------------------------------------------------
+like :- 
+select * from mphasis221 where name like 's%';
+starting letter is s and after that any thing.
+-----------------------------------------------------------------------
+select * from mphasis221 where name like 'A%';
+select * from mphasis221 where name like 's%';
+select * from mphasis221 where name like '%l';
+select * from mphasis221 where name like '%l';
+select * from mphasis221 where name like '_t%';
+
+select * from mphasis221 where name like '__u%';
+
+
 
 
 
