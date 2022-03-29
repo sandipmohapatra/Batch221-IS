@@ -167,9 +167,12 @@ select * from mphasis221 where name like 's%';
 select * from mphasis221 where name like '%l';
 select * from mphasis221 where name like '%l';
 select * from mphasis221 where name like '_t%';
-
+select * from mphasis221 where salary like '3500%';
+select * from mphasis221 where salary like '3%';
+select * from mphasis221 where salary like '%5';
+select * from mphasis221 where salary like '5%';
 select * from mphasis221 where name like '__u%';
-
+-------------------------------------------------------------------------
 
 
 
