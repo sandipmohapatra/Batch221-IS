@@ -272,6 +272,8 @@ dual is a dummy table in oracle.which is used for small calculation.
 10)select to_char(sysdate,'dd month yyyy') from dual;
 11)select to_char(sysdate+1) from dual;
 12)select to_char(sysdate-1) from dual;
+13)select to_char(sysdate,'dd MONTH YYYY HH:MM') from dual;
+
 
 
 
