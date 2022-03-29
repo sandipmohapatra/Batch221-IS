@@ -117,6 +117,17 @@ if(salary>30k)display---manager
 if(salary>25k)display---worker
 else
 helper
+---------------------------------------------------------------------
+create table employee221(empno number,name varchar2(30),salary number,dept varchar2(30));
+insert into employee221 values(103,'sunil',36000,'dev');
+insert into employee221 values(104,'kiran',26000,'dev');
+
+select * from employee221;
+alter table employee221 add designation varchar2(30)
+update employee221 set designation='manager' where salary between 40000 and 60000;
+update employee221 set designation='worker' where salary between 30000 and 40000;
+update employee221 set designation='helper' where salary between 10000 and 29000;
+
 ----------------------------------------------------------------------------------------------------------------------------------
 comparison operator
 ----------------------------------
