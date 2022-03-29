@@ -228,8 +228,12 @@ we cannot delete bank221 accno if  the accno is used in the transaction table ac
 ** we cannot make the accno orpfan.
 we have to delete the child table record first and then we can delete the parent record.
 ---------------------------------------------------------------------------------------------------------------------------
+Create a employee master table
+empno pk,name,dept,salary
 
-
+create a designation child table
+empno fk,design,loc
+----------------------------------------------------------------------------------
 
 
 
