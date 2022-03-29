@@ -181,6 +181,35 @@ select * from mphasis221 order by salary;
 select * from mphasis221 order by name desc;
 select * from mphasis221 order by salary desc;
 ------------------------------------------------------------------------------------
+Operations
+--------------------
+1)TL (Transaction language)---select
+2)DML (data manipulation language) :- insert,update, delete
+3)DCL(data control language ):- grant,revoke
+4)DDL(data defination language):- create ,alter,drop
+5)TCL (Transaction control language) :- commit,rollback ,savepoint
+ ---------------------------------------------------------------------------------------------------------
+constraints
+---------------------
+1)primary key:- if we declare a column as primary key we cannot enter duplicate value and we cannot leave the feild empty.
+2)unique key:- if we declare a column as unique key we cannot enter duclicate values.
+3)not null:- if we declare a column as not null we cannot leave that field empty.
+4)check:-we can limit a value of a column.(example:- salary should be greater than 18000);
+5)foreign key:-we can link a table column with another table column which is having primary key.
+------------------------------------------------------------------------------------------------------
+example:-
+
+create table emp221 (empno number primary key,name varchar2(30) not null,email varchar2(30) unique,
+salary number check (salary >18000));
+
+insert into emp221 values(101,'sandip','sandip@gmail.com',19000);
+insert into emp221 values(102,'sandip','sandip123@gmail.com',19000);
+
+select * from emp221;
+-------------------------------------------------------------------------------------------
+bank table accno,name,balace,email 
+------------------------------------------------------
+
 
 
 
