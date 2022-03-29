@@ -234,10 +234,22 @@ empno pk,name,dept,salary
 create a designation child table
 empno fk,design,loc
 ----------------------------------------------------------------------------------
+create table emply221(empno number primary key,name varchar2(30) not null,dept varchar2(30),salary number);
+
+insert into emply221 values(104,'kiran','dev',35000);
+
+create table design221 (empno number references emply221, design varchar2(30),loc varchar2(30));
+
+insert into design221 values(103,'SR manager','Bangalore');
+
+select a.empno,a.name,a.dept,a.salary,b.design,b.loc from emply221 a,design221 b where a.empno=b.empno;
+---------------------------------------------------------------------------------------------------------------------------------
 
 joining 2 tables
 -----------------------------
-
+a--->create table bank221(accno number primary key,name varchar2(30) not null,balance number check(balance > 1000),email varchar2(50) unique);
+b--->create table transaction(accno number references bank221,trans number,total number);
+------------------------------------------------------
 select a.accno, a.name, a.balance, a.email, b.trans, b.total from bank221 a, transaction b where a.accno=b.accno;
 
 a is an alias for bank221
