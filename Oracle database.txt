@@ -287,10 +287,12 @@ select * from dept221;
 
 select count(empno) ,deptno from dept221 group by deptno;
 select sum(salary) ,deptno from dept221 group by deptno;
+select avg(salary) ,deptno from dept221 group by deptno;
+select max(salary) ,deptno from dept221 group by deptno;
+select min(salary) ,deptno from dept221 group by deptno;
 
-
-
-
+select round(avg(salary),2) deptno from dept221 group by deptno;
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
