@@ -273,7 +273,12 @@ dual is a dummy table in oracle.which is used for small calculation.
 11)select to_char(sysdate+1) from dual;
 12)select to_char(sysdate-1) from dual;
 13)select to_char(sysdate,'dd MONTH YYYY HH:MM') from dual;
-
+------------------------------------------------------
+to_char is used to convert the sysdate  to character format
+date datatype will except :-29-mar-2022
+-------------------------------------------------------------------------------------------------------------------
+group by function
+------------------------------------
 
 
 
