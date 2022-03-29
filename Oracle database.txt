@@ -256,8 +256,13 @@ a is an alias for bank221
 b is an alias for transaction.
 
 -----------------------------------------------------------------------------------------
-
-
+Date function
+--------------------------
+It stored in date format in the database.we can add or substract number from date.
+1)select sysdate from dual; 
+2)select last_day(sysdate) from dual;
+dual is a dummy table in oracle.which is used for small calculation.
+3)select months_between('29-mar-2022','29-nov-2021') from dual;
 
 
 
