@@ -172,7 +172,15 @@ select * from mphasis221 where salary like '3%';
 select * from mphasis221 where salary like '%5';
 select * from mphasis221 where salary like '5%';
 select * from mphasis221 where name like '__u%';
--------------------------------------------------------------------------
+------------------------------------------------------------------------------
+we can display the records in accending and descending order
+------------------------------------------------------------------------------
+select * from mphasis221 order by name asc;
+select * from mphasis221 order by name;
+select * from mphasis221 order by salary;
+select * from mphasis221 order by name desc;
+select * from mphasis221 order by salary desc;
+------------------------------------------------------------------------------------
 
 
 
