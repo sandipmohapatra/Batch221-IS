@@ -235,7 +235,15 @@ create a designation child table
 empno fk,design,loc
 ----------------------------------------------------------------------------------
 
+joining 2 tables
+-----------------------------
 
+select a.accno, a.name, a.balance, a.email, b.trans, b.total from bank221 a, transaction b where a.accno=b.accno;
+
+a is an alias for bank221
+b is an alias for transaction.
+
+-----------------------------------------------------------------------------------------
 
 
 
