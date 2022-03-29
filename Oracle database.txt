@@ -134,6 +134,30 @@ select * from mphasis221 where salary>=15000.75;
 select * from mphasis221 where salary<=15000.75;
 select * from mphasis221 where salary!=15000.75;
 -----------------------------------------------------------------------------
+3)between and,not between ,in,not in,like
+-----------------------------------------------------------------
+select * from mphasis221 where salary between 13000 and 16000;
+
+select * from mphasis221 where salary in(14000.75,15000.75); 
+in means the particular salary should match
+
+select * from mphasis221 where salary not between 13000 and 16000;
+except this others will be displayed
+
+select * from mphasis221 where salary not in(14000.75,15000.75); 
+except this others will be displayed
+-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
