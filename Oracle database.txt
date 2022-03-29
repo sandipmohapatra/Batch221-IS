@@ -110,14 +110,37 @@ truncate table student221; //this will delete all the rows but the table structu
 desc student221
 
 drop table student221;//table structure will be deleted.
--------------------------------------------------------------------------------------------------------------
+----------------------Assignment-1---------------------------------------------------------------------------------------
 create a employee table enter 5 rows.
 empno,name,salary,dept,
 if(salary>30k)display---manager
 if(salary>25k)display---worker
 else
 helper
------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+comparison operator
+----------------------------------
+=(equal to),
+>=(greater than equal to),
+<=(less than equal to)
+>(greater than)
+<(less than)
+!=(not equal to)
+-------------------------------------------------------------------
+select * from mphasis221 where salary=15000.75;
+select * from mphasis221 where salary<15000.75;
+select * from mphasis221 where salary>15000.75;
+select * from mphasis221 where salary>=15000.75;
+select * from mphasis221 where salary<=15000.75;
+select * from mphasis221 where salary!=15000.75;
+-----------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
