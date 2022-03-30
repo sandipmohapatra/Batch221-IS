@@ -201,7 +201,20 @@ dbms_output.put_line('the name is :'||name);
 dbms_output.put_line('the surname is :'||surname);
 dbms_output.put_line('the address is'||address);
 end;
-
+--------------------------------------------------------------------
+declare
+empno emply221.empno%type:=106;
+name emply221.name%type:='Karina';
+dept emply221.dept%type:='Manager';
+salary emply221.salary%type:=76000;
+begin
+dbms_output.put_line('the empno is :'||empno);
+dbms_output.put_line('the name is :'||name);
+dbms_output.put_line('the dept is'||dept);
+dbms_output.put_line('the salary is'||salary);
+insert into emply221 values(empno,name,dept,salary);
+end;
+---------------------------------------------------------------------------------------------
 
 
 
