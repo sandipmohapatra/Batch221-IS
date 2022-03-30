@@ -107,7 +107,16 @@ dbms_output.put_line('the greatest is '||c);
 end if;
 end;
 -----------------------------------------------------------------------
+example-6
+----------------------
+begin
+update emply221 set dept='manager' where empno=101;
+update emply221 set salary=50000 where empno=102;
+insert into emply221 values(105,'Biranchi','dev',45000);
+end;
 
+select * from emply221;
+------------------------------------------------------------------------------
 
 
 
