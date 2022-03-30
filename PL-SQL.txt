@@ -192,8 +192,15 @@ else
 end case;
 end;
 --------------------------------------------------------------------------------------------
-
-
+declare
+name varchar2(25) not null:='Biranchi';
+surname name%type:='Patra';
+address emply221.name%type:='Bangalore';
+begin
+dbms_output.put_line('the name is :'||name);
+dbms_output.put_line('the surname is :'||surname);
+dbms_output.put_line('the address is'||address);
+end;
 
 
 
