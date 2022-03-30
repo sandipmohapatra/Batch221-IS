@@ -176,6 +176,22 @@ end;
 -------------------------------------------------------------------------
 select * from circle221;
 ----------------------------------------------------------
+case -when
+---------------------------
+declare
+grade char(1);
+begin
+grade:=:grade;
+case grade
+when 'A' then dbms_output.put_line('Excellent');
+when 'B' then dbms_output.put_line('Very good');
+when 'C' then dbms_output.put_line('good');
+when 'D' then dbms_output.put_line('Fair');
+else
+ dbms_output.put_line('Excellent');
+end case;
+end;
+--------------------------------------------------------------------------------------------
 
 
 
