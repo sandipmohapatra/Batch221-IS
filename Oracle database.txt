@@ -334,8 +334,17 @@ It displays the base  value of the number.
 9)select sin(100) from dual;
 10)select tan(100) from dual;
 ------------------------------------------------------------------------------
+clone a table(to create backup of a table)
+-------------------------------------------------------------------------------
+create table dept222 as select * from dept221;
+insert into dept222 values(108,'biranchi',25000,20)
 
-
+1)select * from dept222 minus select * from dept221;
+2)select * from dept222 minus select * from dept221;
+3)select * from dept222 union select * from dept221;
+4)select * from dept222 union all select * from dept221;
+5)select * from dept222 intersect select * from dept221;
+-------------------------------------------------------------------------------------------------
 
 
 
