@@ -324,10 +324,12 @@ It displays the remainder.
 4)select abs(-2) from dual;
 It displays the positive value of a number.
 5)select ceil(2.1) from dual;
+select floor(-12.3) from dual;--------------------(-13)
+select floor(-21.74) from dual;-------------------(-22)
 It displays the next value of the number.
 6)select floor(2.9) from dual;
 It displays the base  value of the number.
-7)select log(100) from dual;
+7)select log(100,2) from dual;
 8)select cos(100) from dual;
 9)select sin(100) from dual;
 10)select tan(100) from dual;
