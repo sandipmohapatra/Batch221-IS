@@ -28,3 +28,30 @@ c:=a+b;
 dbms_output.put_line('The result is :'||c);
 end;
 -----------------------------------------------------------------
+example-3
+----------------------
+declare
+a number;
+b number;
+c number;
+begin
+a:=:a;
+b:=:b;
+c:=a+b;
+dbms_output.put_line('The sum of '||a ||' and '||b||' is :'||c);
+end;
+-------------------------------------------------------------------------------
+example-4
+----------------------
+declare
+a number:=10;
+b number:=20;
+begin
+if(a>b)then
+dbms_output.put_line('the greatest is :'||a);
+else 
+dbms_output.put_line('the greatest is :'||b);
+end if;
+end;
+-------------------------------------------------------------------------
+
