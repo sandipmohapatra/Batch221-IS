@@ -313,6 +313,25 @@ It will cut H from both ends.
 10)select trim(' ' from ' Hello StudentsH ') from dual;
 It will delete space from both ends.example:- username/password and bymistake we give space it will delete the header and trailer space.
 ----------------------------------------------------------------------
+Arithmatic function
+-------------------------------------
+1)select round(45.34656332,2) from dual;
+if 3rd place it is >=5 then 1 will be added to the second place.
+2)select trunc(45.34656332,2) from dual;
+it will only display till the 2nd place of decimal.
+3)select mod(45,2) from dual;
+It displays the remainder.
+4)select abs(-2) from dual;
+It displays the positive value of a number.
+5)select ceil(2.1) from dual;
+It displays the next value of the number.
+6)select floor(2.9) from dual;
+It displays the base  value of the number.
+7)select log(100) from dual;
+8)select cos(100) from dual;
+9)select sin(100) from dual;
+10)select tan(100) from dual;
+------------------------------------------------------------------------------
 
 
 
