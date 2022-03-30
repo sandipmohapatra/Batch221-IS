@@ -293,6 +293,26 @@ select min(salary) ,deptno from dept221 group by deptno;
 
 select round(avg(salary),2) deptno from dept221 group by deptno;
 --------------------------------------------------------------------------------------------------------------------------------------------
+String function
+----------------------------
+1)select concat('Hello ', ' Students ') from dual;
+combine two strings
+2)select substr('Hello Students ',1,5) from dual;
+part of a string starting from 1 to 5
+3)select length('Hello Students ') from dual;
+length of a string or no of characters present in the string.
+4)
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 
