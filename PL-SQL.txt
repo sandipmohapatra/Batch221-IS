@@ -1,0 +1,30 @@
+PL-SQL
+-------------------
+declare
+begin
+end;
+----------------------------------------------
+example 1:
+--------------------------
+declare
+a number:=10;
+b number:=20;
+c number;
+begin
+c:=a+b;
+dbms_output.put_line('The result is :'||c);
+end;
+-----------------------------------------------------------------
+example-2
+--------------------------
+declare
+a number;
+b number;
+c number;
+begin
+a:=:a;
+b:=:b;
+c:=a+b;
+dbms_output.put_line('The result is :'||c);
+end;
+-----------------------------------------------------------------
