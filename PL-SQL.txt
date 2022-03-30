@@ -69,5 +69,21 @@ dbms_output.put_line('the greatest is :'||b);
 end if;
 end;
 --------------------------------------------------------------
-
+example-6
+------------------
+declare
+a number;
+b number;
+begin
+a:=:a;
+b:=:b;
+if(a>b)then
+dbms_output.put_line('the greatest is :'||a);
+elsif(a=b)then 
+dbms_output.put_line('the both are equal');
+else
+dbms_output.put_line('the greatest is :'||b);
+end if;
+end;
+------------------------------------------------------------------------
 
