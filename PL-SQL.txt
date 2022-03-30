@@ -119,6 +119,27 @@ select * from emply221;
 ------------------------------------------------------------------------------
 case ---when
 ----------------------------------
+declare 
+a number;
+b number;
+oper varchar2(30);
+begin
+a:=:a;
+b:=:b;
+oper:=:oper;
+case
+when oper='add'
+then dbms_output.put_line('The result is:'||(a+b));
+when oper='sub'
+then dbms_output.put_line('The result is:'||(a-b));
+when oper='mul'
+then dbms_output.put_line('The result is:'||(a*b));
+when oper='div'
+then dbms_output.put_line('The result is:'||(a/b));
+else
+dbms_output.put_line('The operation doesnot exists');
+end case;
+end;
 
 
 
