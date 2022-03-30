@@ -301,8 +301,19 @@ combine two strings
 part of a string starting from 1 to 5
 3)select length('Hello Students ') from dual;
 length of a string or no of characters present in the string.
-4)
- 
+4)select instr('Hello Students ','e') from dual;
+ This will display the first position of e
+5)select lpad('Hello Students',20,'*') from dual;
+6)select rpad('Hello Students',20,'*') from dual;
+It will first create 20 spaces.in that it will put 14 characters and remaining 6 spaces it will put *.
+7)select trim('H' from 'Hello Students') from dual;
+8)select trim('H' from 'Hello StudentsH') from dual;
+It will cut H from both ends. 
+9)select rpad(lpad('hello student',20,'*'),26,'*')from dual;
+10)select trim(' ' from ' Hello StudentsH ') from dual;
+It will delete space from both ends.example:- username/password and bymistake we give space it will delete the header and trailer space.
+----------------------------------------------------------------------
+
 
 
 
