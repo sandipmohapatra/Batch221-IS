@@ -345,11 +345,35 @@ create table bank22(accno number not null, name varchar2(30) not null, balance n
 wap to enter a radius and find the area of the circle using function.
 
 wap to enter a amount and find the simple interset using function.
+si=(p*t*r)/100;
 
 wap to enter a number and find if it is even or odd using function.
 
 * take input from the user dynamically.
 ------------------------------------------------
+Procedure
+---------------------------------
+It is a pl-sql block which execute when called but donot return any value.
+
+create or replace procedure delmanager is
+begin
+delete from emply221 where dept='Manager';
+commit;
+end;
+-------------------------------------------
+begin 
+delmanager;
+end;
+--------------------------------------
+select * from emply221
+------------------------------------------------
+
+
+
+
+
+
+
 
 
 
