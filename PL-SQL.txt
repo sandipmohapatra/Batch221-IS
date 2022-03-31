@@ -378,7 +378,24 @@ begin
 add_no(4,5);
 end;
 ---------------------------
+example-3
+--------------------
+create table users221(empid number,name char(20),age int,salary int,address char(30));
+--------------------------------------------------------------------------------------------------------
+create or replace procedure insertemp(empid number,name varchar2,age number,salary number,address varchar2)
+is 
+begin
+insert into users221 values(empid,name,age,salary,address);
+end;
+---------------------------------------------------------------------------------------------------------------------------------------
+begin
+insertemp(101,'sandip',33,67000,'bangalore');
+insertemp(102,'kiran',31,57000,'bangalore');
+insertemp(103,'priya',30,77000,'bangalore');
+end;
 
+select * from users221;
+----------------------------------------------------------------------
 
 
 
