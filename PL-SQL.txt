@@ -342,7 +342,14 @@ create table bank22(accno number not null, name varchar2(30) not null, balance n
 -----------------------------------------------------------------------------------------------------------------------------------
 
 
+wap to enter a radius and find the area of the circle using function.
 
+wap to enter a amount and find the simple interset using function.
+
+wap to enter a number and find if it is even or odd using function.
+
+* take input from the user dynamically.
+------------------------------------------------
 
 
 
