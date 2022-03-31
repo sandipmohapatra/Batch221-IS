@@ -265,7 +265,7 @@ wap to create function for subtract,multiply,divide 2 nos .
 -------------------------------------------------------------------------------------------
 wap to create a function which will return varchar2();
 ---------------------------------------------------------------------------------
-create or replace function design(salary number) return varchar2 is
+create or replace function design11(salary number) return varchar2 is
 begin
 if(salary >=50000) then
 return 'CEO';
@@ -282,9 +282,24 @@ end;
 ------------------------------------------------------------------------------------------------------------------
 select design(45000) from dual;
 ------------------------------------------------------------------
+create table design222(empno number,name varchar2(30),salary number,design varchar2(30));
+--------------------------------------------------------------------------------------------------------------------------
 
+declare
+empno design222.empno%type:=101;
+name design222.name%type:='Karina';
+salary design222.salary%type:=76000;
+design design222.design%type;
+begin
+design:=design11(salary);
+dbms_output.put_line('the empno is :'||empno);
+dbms_output.put_line('the name is :'||name);
+dbms_output.put_line('the design is'||design);
+dbms_output.put_line('the salary is'||salary);
+insert into design222 values(empno,name,salary,design);
+end;
 
-
+----------------------------------------------------------------------------------------
 
 
 
