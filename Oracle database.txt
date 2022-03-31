@@ -358,12 +358,23 @@ unique(empid,address));
 insert into mphasisstud221 values(101,'sandip','Banagalore');
 insert into mphasisstud221 values(101,'sunil','Hyd');
 ---------------------------------------------------------------------------------------------------------
+sequence :- The value will automatically increment.example:- accno,rollno,slno..etc.
 
+how to create a sequence.
+step 1:--
+create sequence seq221 increment by 1 start with 1;
+step 2:-
+create table mphasisstud222 (empid number,name varchar2(20),address varchar2(20));
+step 3:-
+insert into mphasisstud222 values(seq221.nextval,'atul','bangalore');
+step 4:-
+select * from mphasisstud222;
 
+select seq221.nextVal from dual;
+select seq221.currVal from dual;
 
-
-
-
+drop sequence seq221;
+-----------------------------------------
 
 
 
