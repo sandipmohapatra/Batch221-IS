@@ -263,7 +263,25 @@ end;
 -------------------------------------------------------------------------------------------
 wap to create function for subtract,multiply,divide 2 nos .
 -------------------------------------------------------------------------------------------
-
+wap to create a function which will return varchar2();
+---------------------------------------------------------------------------------
+create or replace function design(salary number) return varchar2 is
+begin
+if(salary >=50000) then
+return 'CEO';
+elsif(salary >=40000) then
+return 'Manager';
+elsif(salary >=30000) then
+return 'Officer';
+elsif(salary >=20000) then
+return 'Worker';
+else
+return 'Helper';
+end if;
+end;
+------------------------------------------------------------------------------------------------------------------
+select design(45000) from dual;
+------------------------------------------------------------------
 
 
 
