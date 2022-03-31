@@ -345,10 +345,19 @@ insert into dept222 values(108,'biranchi',25000,20)
 4)select * from dept222 union all select * from dept221;
 5)select * from dept222 intersect select * from dept221;
 -------------------------------------------------------------------------------------------------
+primary key:- we cannot enter duplicate records and we cannot leave the field empty.
+composite key :- it is used to make more than one column as primary key.
 
+create table mphasisstud221
+(empid number not null,
+name varchar2(30) not null,
+address varchar2(20),
+primary key(empid,name),
+unique(empid,address));
 
-
-
+insert into mphasisstud221 values(101,'sandip','Banagalore');
+insert into mphasisstud221 values(101,'sunil','Hyd');
+---------------------------------------------------------------------------------------------------------
 
 
 
