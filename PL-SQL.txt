@@ -228,15 +228,48 @@ create or replace function addno(i number,j number) return number is
 begin
 return i+j;
 end;
+
+create or replace function subno(i number,j number) return number is
+begin
+return i-j;
+end;
+
+create or replace function mulno(i number,j number) return number is
+begin
+return i*j;
+end;
+
+create or replace function divno(i number,j number) return number is
+begin
+return i/j;
+end;
 -------------------------function call-------------------------------------------
 
 declare 
-k number;
+a number;
+b number;
+c number;
+d number;
 begin
-k:=addno(10,20);
-dbms_output.put_line('The sum is '||k);
+a:=addno(10,20);
+b:=subno(20,10);
+c:=mulno(20,10);
+d:=divno(20,10);
+dbms_output.put_line('The sum is '||a);
+dbms_output.put_line('The sub is '||b);
+dbms_output.put_line('The mul is '||c);
+dbms_output.put_line('The div is '||d);
 end;
-------------------------------------------------
+-------------------------------------------------------------------------------------------
+wap to create function for subtract,multiply,divide 2 nos .
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
