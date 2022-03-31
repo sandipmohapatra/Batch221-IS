@@ -301,12 +301,45 @@ end;
 
 ----------------------------------------------------------------------------------------
 
+wap to create a bank transaction
+accno,name,balace,withdraw,deposite,total should be calulated and inserted into a bank221 table.
+------------------------------------------------------------------------------------------------------
+declare 
+accno bank22.accno%type:=101;
+name bank22.name%type:='Biranchi';
+balance bank22.balance%type:=100000;
+withdraw bank22.withdraw%type:=20000;
+deposit bank22.deposit%type:=10000;
+total bank22.total%type:=(balance-withdraw+deposit);
+begin 
+dbms_output.put_line('the accno is :'||accno); 
+dbms_output.put_line('the name is :'||name);
+dbms_output.put_line('the balance is'||balance);
+dbms_output.put_line('the withdraw is'||withdraw); 
+dbms_output.put_line('the deposit is'||deposit);
+dbms_output.put_line('the total is'||total); 
+insert into bank22 values(accno,name,balance,withdraw,deposit,total); 
+end;
+-----------------------------------------------------------------------------------
 
-
-
-
-
-
+declare 
+accno bank22.accno%type :=:accno; 
+name bank22.name%type:=:name;
+balance bank22.balance%type:=:balance; 
+withdraw bank22.withdraw%type:=:withdraw;
+deposit bank22.deposit%type:=:deposit;
+total bank22.total%type:=(balance-withdraw+deposit);
+begin dbms_output.put_line('the accno is :'||accno);
+dbms_output.put_line('the name is :'||name);
+dbms_output.put_line('the balance is'||balance); 
+dbms_output.put_line('the withdraw is'||withdraw); 
+dbms_output.put_line('the deposit is'||deposit); 
+dbms_output.put_line('the total is'||total); 
+insert into bank22 values(accno,name,balance,withdraw,deposit,total);
+end;
+--------------------------------------------------------------------------
+create table bank22(accno number not null, name varchar2(30) not null, balance number, withdraw number, deposit number,total number);
+-----------------------------------------------------------------------------------------------------------------------------------
 
 
 
