@@ -215,6 +215,37 @@ dbms_output.put_line('the salary is'||salary);
 insert into emply221 values(empno,name,dept,salary);
 end;
 ---------------------------------------------------------------------------------------------
+function:- There are two types of functions.
+------------------------------------------------------------------------------------------------------------
+1)user-defined functions :- user will define and can be used within the program.
+2)pre-defined functions:- math functions,string functions.
+
+A function is a pl-sql block which returns a single value.
+
+example-1:
+-----------------function create-------------------------------------------------
+create or replace function addno(i number,j number) return number is
+begin
+return i+j;
+end;
+-------------------------function call-------------------------------------------
+
+declare 
+k number;
+begin
+k:=addno(10,20);
+dbms_output.put_line('The sum is '||k);
+end;
+------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 
 
