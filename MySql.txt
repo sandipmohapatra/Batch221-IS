@@ -21,6 +21,7 @@ primary key(studid)
 );
 ----------------------------------------------------------------------------------
 6)to insert record
+ insert into student(name,address) values('binachi','orissa');
 insert into student values(101,'tarun','chennei');
 -----------------------------------------------------------------------------------
 7)to view the records 
@@ -30,8 +31,15 @@ select * from student;
 update student set address='Bangalore' where name='tarun';
 --------------------------------------------------------------------------
 9)to create a view (view will not contain any data.it will contain only the query)
+example :-
 create view stud as select studid,name from student;
+select * from stud;
+----------------------------------------------------------------
 we can do insert,update and delete of the view it will reflect to the base table.
+
+view is used to store complex querries from single table or multiple tables.
+
+example:- you have a table having 50 columns.you require 10 columns data frequently.so we can create a view of that 10 columns.
 -------------------------------------------------------------------------------
 10)to see all the tables and views
 show tables;
