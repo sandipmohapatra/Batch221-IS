@@ -130,3 +130,61 @@ location VARCHAR(30) DEFAULT NULL,
 PRIMARY KEY(studid,NAME)
 );
 -----------------------------------------------------------------
+mysql> create table employee(empno int,name varchar(30),address varchar(30),salary float);
+Query OK, 0 rows affected (0.35 sec)
+
+mysql> insert into employee values(101,'sandip','hyd',50000);
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into employee values(102,'biranchi','hyd',45000);
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into employee values(103,'sunil','hyd',35000);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> insert into employee values(104,'atul','bang',35000);
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into employee values(105,'anil','bang',45000.65);
+Query OK, 1 row affected (0.08 sec)
+
+mysql> select * from employee;
++-------+----------+---------+---------+
+| empno | name     | address | salary  |
++-------+----------+---------+---------+
+|   101 | sandip   | hyd     |   50000 |
+|   102 | biranchi | hyd     |   45000 |
+|   103 | sunil    | hyd     |   35000 |
+|   104 | atul     | bang    |   35000 |
+|   105 | anil     | bang    | 45000.6 |
++-------+----------+---------+---------+
+5 rows in set (0.00 sec)
+
+mysql> select address,count(*) from employee group by address;
++---------+----------+
+| address | count(*) |
++---------+----------+
+| bang    |        2 |
+| hyd     |        3 |
++---------+----------+
+2 rows in set (0.04 sec)
+
+mysql> select address,avg(salary) from employee group by address;
++---------+-----------------+
+| address | avg(salary)     |
++---------+-----------------+
+| bang    |  40000.32421875 |
+| hyd     | 43333.333333333 |
++---------+-----------------+
+2 rows in set (0.06 sec)
+
+mysql> select address,sum(salary) from employee group by address;
++---------+---------------+
+| address | sum(salary)   |
++---------+---------------+
+| bang    | 80000.6484375 |
+| hyd     |        130000 |
++---------+---------------+
+2 rows in set (0.05 sec)
+
+mysql>
