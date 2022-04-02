@@ -376,7 +376,24 @@ select seq221.currVal from dual;
 drop sequence seq221;
 -----------------------------------------
 
+grant and revoke
+----------------------------
+conn system/1234
 
+This is your admin user.
+
+create user atul identified by mphasis;
+
+conn atul/mphasis;
+
+---------------------------------------------
+conn system/1234
+
+grant session to atul;
+
+grant dba to atul;
+-------------------------------------------------------------
+ revoke dba from atul;
 
 
 
